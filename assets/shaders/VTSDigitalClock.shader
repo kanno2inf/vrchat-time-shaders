@@ -32,9 +32,6 @@
         float _Cutoff;
         int _IsPanorama;
 
-        UNITY_INSTANCING_CBUFFER_START(Props)
-        UNITY_INSTANCING_CBUFFER_END
-
         void surf (Input IN, inout SurfaceOutputStandard o) {
             const float2 uv = IN.uv_TexChars;
             const float2 uvchar = {fmod(uv.x*8, 1), uv.y};

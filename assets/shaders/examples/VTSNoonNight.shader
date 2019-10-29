@@ -30,8 +30,6 @@
         fixed4 _Color;
         int _IsPanorama;
 
-        UNITY_INSTANCING_CBUFFER_START(Props)
-        UNITY_INSTANCING_CBUFFER_END
 
         void surf (Input IN, inout SurfaceOutputStandard o) {
             const float2 x1 = {1.0/8, 0};

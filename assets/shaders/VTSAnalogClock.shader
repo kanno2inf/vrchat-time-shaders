@@ -32,9 +32,6 @@
         float _Cutoff;
         int _IsPanorama;
 
-        UNITY_INSTANCING_CBUFFER_START(Props)
-        UNITY_INSTANCING_CBUFFER_END
-
         void surf (Input IN, inout SurfaceOutputStandard o) {
             const float2 uvo = IN.uv_TexHour - 0.5;
             clip(0.25-(uvo.x*uvo.x+uvo.y*uvo.y));
